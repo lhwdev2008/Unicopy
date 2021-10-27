@@ -144,7 +144,7 @@
             android:id="@+id/btCategory2"
             android:layout_width="74dp"
             android:layout_height="106dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="1dp"
             android:backgroundTint="#7C7C7C"
             android:text="Copy"
