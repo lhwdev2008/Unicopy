@@ -26,6 +26,8 @@ public class CopyActivity5 extends AppCompatActivity {
                 Intent intent = new Intent(CopyActivity5.this, CopyActivity4.class);
                 startActivity(intent);
                 finish();
+
+                overridePendingTransition(0, 0);
             }
         });
 
@@ -36,6 +38,8 @@ public class CopyActivity5 extends AppCompatActivity {
                 Intent intent = new Intent(CopyActivity5.this, CopyActivity.class);
                 startActivity(intent);
                 finish();
+
+                overridePendingTransition(0, 0);
             }
         });
 
