@@ -21,7 +21,7 @@ public class CopyActivity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_copy4);
 
-        Button btPrevious = findViewById(R.id.button);
+        Button btPrevious = findViewById(R.id.btLeft);
         btPrevious.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,7 +31,7 @@ public class CopyActivity4 extends AppCompatActivity {
             }
         });
 
-        Button btNext = findViewById(R.id.button2);
+        Button btNext = findViewById(R.id.btRight);
         btNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

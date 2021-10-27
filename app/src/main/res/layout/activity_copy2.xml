@@ -7,33 +7,65 @@
     android:background="#7C7C7C"
     tools:context=".CopyActivity2">
 
-    <TextView
-        android:id="@+id/tvTopBar"
-        android:layout_width="416dp"
-        android:layout_height="69dp"
-        android:layout_marginBottom="662dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/TopBar"
+        android:layout_width="413dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="27dp"
         android:background="#494949"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/category1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/tvTiltle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="-410dp"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/freescript"
-        android:text="Mathematics"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvTopBar"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="62dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/freescript"
+            android:text="Mathematics"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btRight"
+            app:layout_constraintStart_toEndOf="@+id/btLeft"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btLeft"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="2dp"
+            android:text="◀"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btRight"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="1dp"
+            android:text="▶"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvTitle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/category1"
@@ -70,12 +102,11 @@
             android:id="@+id/btCategory1"
             android:layout_width="74dp"
             android:layout_height="106dp"
-            android:layout_marginStart="28dp"
+            android:layout_marginStart="25dp"
             android:layout_marginTop="1dp"
             android:backgroundTint="#7C7C7C"
             android:text="Copy"
             android:textSize="13sp"
-            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/tvCategory1"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -95,7 +126,7 @@
         <TextView
             android:id="@+id/tvCategory2"
             android:layout_width="51dp"
-            android:layout_height="87dp"
+            android:layout_height="100dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="11dp"
             android:layout_marginEnd="27dp"
@@ -115,7 +146,7 @@
             android:id="@+id/btCategory2"
             android:layout_width="74dp"
             android:layout_height="106dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="1dp"
             android:backgroundTint="#7C7C7C"
             android:text="Copy"
@@ -157,7 +188,7 @@
             android:id="@+id/btCategory3"
             android:layout_width="74dp"
             android:layout_height="106dp"
-            android:layout_marginStart="25dp"
+            android:layout_marginStart="22dp"
             android:layout_marginTop="1dp"
             android:backgroundTint="#7C7C7C"
             android:text="Copy"
@@ -180,7 +211,7 @@
             android:id="@+id/tvCategory4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="27dp"
+            android:layout_marginStart="23dp"
             android:layout_marginTop="13dp"
             android:layout_marginEnd="27dp"
             android:layout_marginBottom="17dp"
@@ -198,7 +229,7 @@
             android:id="@+id/btCategory4"
             android:layout_width="74dp"
             android:layout_height="106dp"
-            android:layout_marginStart="17dp"
+            android:layout_marginStart="18dp"
             android:layout_marginTop="1dp"
             android:backgroundTint="#7C7C7C"
             android:text="Copy"
@@ -239,7 +270,7 @@
             android:id="@+id/btCategory5"
             android:layout_width="74dp"
             android:layout_height="106dp"
-            android:layout_marginStart="23dp"
+            android:layout_marginStart="21dp"
             android:layout_marginTop="1dp"
             android:backgroundTint="#7C7C7C"
             android:text="Copy"
@@ -280,7 +311,7 @@
             android:id="@+id/btCategory6"
             android:layout_width="74dp"
             android:layout_height="106dp"
-            android:layout_marginStart="19dp"
+            android:layout_marginStart="17dp"
             android:layout_marginTop="1dp"
             android:backgroundTint="#7C7C7C"
             android:text="Copy"
@@ -303,7 +334,7 @@
             android:id="@+id/tvCategory7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="17dp"
             android:layout_marginTop="13dp"
             android:layout_marginEnd="27dp"
             android:layout_marginBottom="17dp"
@@ -321,7 +352,7 @@
             android:id="@+id/btCategory7"
             android:layout_width="74dp"
             android:layout_height="106dp"
-            android:layout_marginStart="11dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="1dp"
             android:backgroundTint="#7C7C7C"
             android:text="Copy"
@@ -362,7 +393,7 @@
             android:id="@+id/btCategory8"
             android:layout_width="74dp"
             android:layout_height="106dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="1dp"
             android:backgroundTint="#7C7C7C"
             android:text="Copy"
@@ -405,7 +436,7 @@
             android:id="@+id/btCategory9"
             android:layout_width="74dp"
             android:layout_height="106dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="1dp"
             android:backgroundTint="#7C7C7C"
             android:text="Copy"
@@ -448,7 +479,7 @@
             android:id="@+id/btCategory10"
             android:layout_width="74dp"
             android:layout_height="106dp"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="1dp"
             android:backgroundTint="#7C7C7C"
             android:text="Copy"
@@ -456,35 +487,5 @@
             app:layout_constraintStart_toEndOf="@+id/tvCategory10"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="70dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="-80dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#494949"
-        android:text="◀"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/category1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTopBar" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="70dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="-57dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="-62dp"
-        android:backgroundTint="#494949"
-        android:text="▶"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/tvTopBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvTopBar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
