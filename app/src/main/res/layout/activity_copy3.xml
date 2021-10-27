@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7C7C7C"
+    tools:context=".CopyActivity3">
+
+    <TextView
+        android:id="@+id/tvTopBar"
+        android:layout_width="416dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="662dp"
+        android:background="#494949"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTiltle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-410dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/freescript"
+        android:text="Mathematics"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTopBar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category1"
+        android:layout_width="164dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="14dp"
+        android:background="#494949"
+        app:layout_constraintBottom_toTopOf="@+id/category3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTopBar">
+
+        <TextView
+            android:id="@+id/tvCategory1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="sans-serif"
+            android:text="∠"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btCategory1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btCategory1"
+            android:layout_width="74dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="#7C7C7C"
+            android:text="Copy"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tvCategory1"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category2"
+        android:layout_width="164dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="14dp"
+        android:background="#494949"
+        app:layout_constraintBottom_toTopOf="@+id/category4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTopBar">
+
+        <TextView
+            android:id="@+id/tvCategory2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="sans-serif"
+            android:text="°"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btCategory2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btCategory2"
+            android:layout_width="74dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="#7C7C7C"
+            android:text="Copy"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/tvCategory2"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category3"
+        android:layout_width="164dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:background="#494949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category1">
+
+        <TextView
+            android:id="@+id/tvCategory3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="sans-serif"
+            android:text="≡"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btCategory3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btCategory3"
+            android:layout_width="74dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="#7C7C7C"
+            android:text="Copy"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/tvCategory3"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category4"
+        android:layout_width="164dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:background="#494949"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category2">
+
+        <TextView
+            android:id="@+id/tvCategory4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="sans-serif"
+            android:text="∴"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btCategory4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btCategory4"
+            android:layout_width="74dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="#7C7C7C"
+            android:text="Copy"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/tvCategory4"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category5"
+        android:layout_width="164dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:background="#494949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category3">
+
+        <TextView
+            android:id="@+id/tvCategory5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btCategory5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btCategory5"
+            android:layout_width="74dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="#7C7C7C"
+            android:text="Copy"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/tvCategory5"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category6"
+        android:layout_width="164dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="16dp"
+        android:background="#494949"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category4">
+
+        <TextView
+            android:id="@+id/tvCategory6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btCategory6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btCategory6"
+            android:layout_width="74dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="#7C7C7C"
+            android:text="Copy"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/tvCategory6"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category7"
+        android:layout_width="164dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:background="#494949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category5">
+
+        <TextView
+            android:id="@+id/tvCategory7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="sans-serif"
+            android:text="×"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btCategory7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btCategory7"
+            android:layout_width="74dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="#7C7C7C"
+            android:text="Copy"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/tvCategory7"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category8"
+        android:layout_width="164dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="16dp"
+        android:background="#494949"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category6">
+
+        <TextView
+            android:id="@+id/tvCategory8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="sans-serif"
+            android:text="÷"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btCategory8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btCategory8"
+            android:layout_width="74dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="#7C7C7C"
+            android:text="Copy"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/tvCategory8"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category9"
+        android:layout_width="164dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="37dp"
+        android:background="#494949"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category7">
+
+        <TextView
+            android:id="@+id/tvCategory9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="sans-serif"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btCategory9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btCategory9"
+            android:layout_width="74dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="#7C7C7C"
+            android:text="Copy"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/tvCategory9"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/category10"
+        android:layout_width="164dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="37dp"
+        android:background="#494949"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category8">
+
+        <TextView
+            android:id="@+id/tvCategory10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="sans-serif"
+            android:text="π"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btCategory10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btCategory10"
+            android:layout_width="74dp"
+            android:layout_height="106dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="1dp"
+            android:backgroundTint="#7C7C7C"
+            android:text="Copy"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/tvCategory10"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-80dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#494949"
+        android:text="◀"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/category1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTopBar" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="-57dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="-62dp"
+        android:backgroundTint="#494949"
+        android:text="▶"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTopBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTopBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
